@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  background-color: #333;
+  color: white;
+}
+
+ .container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 5px;
+
+ }
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   transition:all .5s ease-in;
+}
+
+.container > div:hover{
+  opacity: 0.5;
+  transform: scale(0.99);
+}
+.bg1 {
+  background-image: url('images/landscape.jpg');
+}
+
+.bg2{
+  background-image: url('images/city.jpg');
+}
+.container > div:nth-of-type(1){
+  grid-column: 1/4;
+}
+.container > div:nth-of-type(5){
+  grid-column: 3/5;
+}
+.container > div:nth-of-type(7){
+  grid-column: 2/4;
+}
+.container >div:nth-of-type(10){
+  grid-column: 2/5;
+}
+.container > div:nth-of-type(11){
+  grid-column: 1/4;
+}
